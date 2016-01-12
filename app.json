@@ -1,0 +1,44 @@
+{
+  "name": "uh-prodigal",
+  "parallelism": "PTHREAD",
+  "version": "2.6.2",
+  "label": "Prodigal at UH",
+  "shortDescription": "Prodigal at UH",
+  "longDescription": "Prodigal at UH",
+  "deploymentPath": "/lus/scratch/seanbc/apps/uh-prodigal-2.6.2",
+  "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
+  "executionSystem": "sb.execute.uhhpc1.its.hawaii.edu",
+  "executionType": "CLI",
+  "templatePath": "wrapper.sh",
+  "testPath": "test/test.sh",
+  "tags": [
+    "demo"
+  ],
+  "ontology": [
+  ],
+  "inputs": [
+    {
+      "id": "input1",
+      "details": {
+        "label": "Input file",
+        "description": "The Prodigal input file"
+      },
+       "semantics":{
+         "ontology":[],
+         "minCardinality":1,
+         "fileTypes":[
+         "TEXT-0"
+        ]
+        },
+         "value": {
+          "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input.prodigal",
+          "required": false,
+          "visible": true,
+          "validator": null
+         }
+    }
+  ],
+  "parameters": [
+    
+  ]
+}
