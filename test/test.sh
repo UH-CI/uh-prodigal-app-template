@@ -3,7 +3,7 @@
 
 # These variables correspond to the inputs and parameter ids from the apps.json file. 
 # The API will pass the actual values into this script prior to execution.
-INPUT=~/lus/input.prodigal 
+INPUT=~/lus/input.fasta
 
 # Conditional create an input/output directory in the local scratch folder
 if [ ! -d input ]; then mkdir input; fi
@@ -27,7 +27,7 @@ if [ -e input/$FILENAME ]; then
 
     module load prod/prodigal_2.6.2
 	
-	prodigal input/$FILENAME > output/prodigal-app_output.txt
+	prodigal -i input/$FILENAME > output/prodigal-app_output.txt
 
 fi
 

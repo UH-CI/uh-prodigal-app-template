@@ -27,7 +27,7 @@ if [ -e input/$FILENAME ]; then
 
     module load prod/prodigal_2.6.2
 	
-	prodigal input/$FILENAME > output/prodigal-app_output.txt
+	prodigal -i input/$FILENAME > output/prodigal-app_output.txt
 
 fi
 
