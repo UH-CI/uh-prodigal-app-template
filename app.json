@@ -21,7 +21,7 @@
       "id": "input1",
       "details": {
         "label": "Input file",
-        "description": "The Prodigal input file"
+        "description": "The Prodigal input file - should be a Fasta, Genbank or EMBL file"
       },
        "semantics":{
          "ontology":[],
